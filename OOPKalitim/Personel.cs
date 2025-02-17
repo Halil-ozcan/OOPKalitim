@@ -11,5 +11,10 @@ namespace OOPKalitim
         public DateTime isBaslangicTarihi{ get; set; }
         public DateTime isBitisTarihi{ get; set; }
         public int izinGunSayisi{ get; set; }
+
+        public Personel()
+        {
+            Console.WriteLine("Personel nesnesi Yapıcı Metot Çalıştı");
+        }
     }
 }

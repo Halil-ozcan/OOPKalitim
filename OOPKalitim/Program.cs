@@ -10,38 +10,48 @@ namespace OOPKalitim
     {
         static void Main(string[] args)
         {
-            TemelTip temelTip = new TemelTip();
+            //TemelTip temelTip = new TemelTip();
 
-            temelTip.temelTipMetot1();
+            //temelTip.temelTipMetot1();
 
-            Egitmen egitmen = new Egitmen();
-            Console.WriteLine("Eğitmen nesnesi örneklendi");
-            egitmen.temelTipMetot1();
+            //Egitmen egitmen = new Egitmen();
+            //Console.WriteLine("Eğitmen nesnesi örneklendi");
+            //egitmen.temelTipMetot1();
 
-            // özel tiplerde boxing ve unboxing
+            //// özel tiplerde boxing ve unboxing
 
-            //bizim object nesnemiz nedir?
-            //Temel Tip
-            TemelTip T2;
-            //hangi nesnelerde temel tip object görevi görür.
-            //personel eğitmen ogrenci
-            //temeltip nesnesinden türedikleri için temeltip nesnensi bu nesnelerde object gibi davranır.
+            ////bizim object nesnemiz nedir?
+            ////Temel Tip
+            //TemelTip T2;
+            ////hangi nesnelerde temel tip object görevi görür.
+            ////personel eğitmen ogrenci
+            ////temeltip nesnesinden türedikleri için temeltip nesnensi bu nesnelerde object gibi davranır.
 
-            T2 = egitmen; // egitmen nesnesi temel tip nesnesine atandı.
+            //T2 = egitmen; // egitmen nesnesi temel tip nesnesine atandı.
 
-            egitmen = (Egitmen)T2; // unboxing
+            //egitmen = (Egitmen)T2; // unboxing
 
-            Personel personel = new Personel();
-            T2 = personel; // personel nesnesi temel tip nesnesine atandı.
+            //Personel personel = new Personel();
+            //T2 = personel; // personel nesnesi temel tip nesnesine atandı.
 
-            personel = (Personel)T2;
- 
+            //personel = (Personel)T2;
 
-            // Boxing -- UnBoxing
 
-            object o1 = egitmen; // Boxing;
-            egitmen = (Egitmen) o1; // UnBoxing;
-           
+            //// Boxing -- UnBoxing
+
+            //object o1 = egitmen; // Boxing;
+            //egitmen = (Egitmen)o1; // UnBoxing;
+
+
+           Personel P1 = new Personel();
+            P1.temelTipMetot1();
+
+
+            Ogrenci O1 = new Ogrenci();
+            O1.temelTipMetot1();
+            
+            
+
         }
     }
 }
